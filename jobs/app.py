@@ -1,9 +1,9 @@
 from flask import Flas, render_template
+import flask
 
-app = Flask(__name__)
+app = flask(__name__)
 
 @app.route('/')
 @app.route('/jobs')
 def jobs():
     return render_template('index.html')
-    
